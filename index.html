@@ -6,8 +6,8 @@
     <title>Cricket World Cup History</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f7;
             color: #333;
             text-align: center;
             padding: 20px;
@@ -15,88 +15,211 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             color: #004d99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 15px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .world-cup-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .cup-card {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .cup-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .cup-card h2 {
+            font-size: 1.8em;
+            color: #c00;
+            margin-top: 0;
             border-bottom: 2px solid #ffcc00;
             padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #0056b3;
-            margin-top: 30px;
-        }
-
-        p {
-            font-size: 1.1em;
-            text-align: justify;
             margin-bottom: 20px;
         }
 
-        ul {
+        .cup-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .cup-card strong {
+            color: #0056b3;
+            font-weight: 700;
+        }
+
+        .cup-card ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
-        li {
-            background-color: #e6f2ff;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #004d99;
-            text-align: left;
-            font-size: 1.1em;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
+        .cup-card li {
+            margin: 5px 0;
+            padding-left: 20px;
+            position: relative;
         }
-
-        .year {
-            font-weight: bold;
-            color: #c00;
-            font-size: 1.2em;
-            margin-right: 15px;
-            min-width: 80px;
+        
+        .cup-card li:before {
+            content: '🏆'; /* A trophy emoji for bullet points */
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>History of the Cricket World Cup Winners</h1>
+        <h1>Detailed History of Cricket World Cup</h1>
         <p>
-            The ICC Men's Cricket World Cup is the pinnacle of One Day International (ODI) cricket,
-            bringing together the best teams from around the globe. Held every four years, it's a
-            celebration of talent, strategy, and unforgettable moments. Since its inception in 1975,
-            the tournament has crowned several champions, each with their own unique story of victory.
+            Here's a look at the winners and key stats from every edition of the ICC Men's ODI World Cup since its beginning in 1975.
         </p>
 
-        <h2>List of Winners</h2>
-        <ul>
-            <li><span class="year">1975:</span> West Indies</li>
-            <li><span class="year">1979:</span> West Indies</li>
-            <li><span class="year">1983:</span> India</li>
-            <li><span class="year">1987:</span> Australia</li>
-            <li><span class="year">1992:</span> Pakistan</li>
-            <li><span class="year">1996:</span> Sri Lanka</li>
-            <li><span class="year">1999:</span> Australia</li>
-            <li><span class="year">2003:</span> Australia</li>
-            <li><span class="year">2007:</span> Australia</li>
-            <li><span class="year">2011:</span> India</li>
-            <li><span class="year">2015:</span> Australia</li>
-            <li><span class="year">2019:</span> England</li>
-            <li><span class="year">2023:</span> Australia</li>
-        </ul>
-        
-        <p>
-            Australia holds the record for the most titles, showcasing their dominance in the tournament's history.
-            India's memorable wins in 1983 and 2011, and West Indies' early dominance, remain iconic moments for cricket fans.
-        </p>
+        <div class="world-cup-grid">
+            
+            <div class="cup-card">
+                <h2>1975</h2>
+                <p><strong>Winner:</strong> West Indies</p>
+                <p><strong>Finalist:</strong> Australia</p>
+                <p><strong>Semifinalists:</strong> England, New Zealand</p>
+                <p><strong>Highest Run Scorer:</strong> Glenn Turner (NZ) - 333 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Gary Gilmour (AUS) - 11 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>1979</h2>
+                <p><strong>Winner:</strong> West Indies</p>
+                <p><strong>Finalist:</strong> England</p>
+                <p><strong>Semifinalists:</strong> Pakistan, New Zealand</p>
+                <p><strong>Highest Run Scorer:</strong> Gordon Greenidge (WI) - 253 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Mike Hendrick (ENG) - 10 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>1983</h2>
+                <p><strong>Winner:</strong> India</p>
+                <p><strong>Finalist:</strong> West Indies</p>
+                <p><strong>Semifinalists:</strong> England, Pakistan</p>
+                <p><strong>Highest Run Scorer:</strong> David Gower (ENG) - 384 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Roger Binny (IND) - 18 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>1987</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> England</p>
+                <p><strong>Semifinalists:</strong> Pakistan, India</p>
+                <p><strong>Highest Run Scorer:</strong> Graham Gooch (ENG) - 471 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Craig McDermott (AUS) - 18 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>1992</h2>
+                <p><strong>Winner:</strong> Pakistan</p>
+                <p><strong>Finalist:</strong> England</p>
+                <p><strong>Semifinalists:</strong> New Zealand, South Africa</p>
+                <p><strong>Highest Run Scorer:</strong> Martin Crowe (NZ) - 456 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Wasim Akram (PAK) - 18 wickets</p>
+            </div>
+            
+            <div class="cup-card">
+                <h2>1996</h2>
+                <p><strong>Winner:</strong> Sri Lanka</p>
+                <p><strong>Finalist:</strong> Australia</p>
+                <p><strong>Semifinalists:</strong> India, West Indies</p>
+                <p><strong>Highest Run Scorer:</strong> Sachin Tendulkar (IND) - 523 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Anil Kumble (IND) - 15 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>1999</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> Pakistan</p>
+                <p><strong>Semifinalists:</strong> South Africa, New Zealand</p>
+                <p><strong>Highest Run Scorer:</strong> Rahul Dravid (IND) - 461 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Geoff Allott (NZ) & Shane Warne (AUS) - 20 wickets each</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2003</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> India</p>
+                <p><strong>Semifinalists:</strong> Kenya, Sri Lanka</p>
+                <p><strong>Highest Run Scorer:</strong> Sachin Tendulkar (IND) - 673 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Chaminda Vaas (SL) - 23 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2007</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> Sri Lanka</p>
+                <p><strong>Semifinalists:</strong> New Zealand, South Africa</p>
+                <p><strong>Highest Run Scorer:</strong> Matthew Hayden (AUS) - 659 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Glenn McGrath (AUS) - 26 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2011</h2>
+                <p><strong>Winner:</strong> India</p>
+                <p><strong>Finalist:</strong> Sri Lanka</p>
+                <p><strong>Semifinalists:</strong> Pakistan, New Zealand</p>
+                <p><strong>Highest Run Scorer:</strong> Tillakaratne Dilshan (SL) - 500 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Shahid Afridi (PAK) & Zaheer Khan (IND) - 21 wickets each</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2015</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> New Zealand</p>
+                <p><strong>Semifinalists:</strong> India, South Africa</p>
+                <p><strong>Highest Run Scorer:</strong> Martin Guptill (NZ) - 547 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Mitchell Starc (AUS) & Trent Boult (NZ) - 22 wickets each</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2019</h2>
+                <p><strong>Winner:</strong> England</p>
+                <p><strong>Finalist:</strong> New Zealand</p>
+                <p><strong>Semifinalists:</strong> India, Australia</p>
+                <p><strong>Highest Run Scorer:</strong> Rohit Sharma (IND) - 648 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Mitchell Starc (AUS) - 27 wickets</p>
+            </div>
+
+            <div class="cup-card">
+                <h2>2023</h2>
+                <p><strong>Winner:</strong> Australia</p>
+                <p><strong>Finalist:</strong> India</p>
+                <p><strong>Semifinalists:</strong> New Zealand, South Africa</p>
+                <p><strong>Highest Run Scorer:</strong> Virat Kohli (IND) - 765 runs</p>
+                <p><strong>Highest Wicket Taker:</strong> Mohammed Shami (IND) - 24 wickets</p>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
