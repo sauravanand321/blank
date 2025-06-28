@@ -3,39 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Cricket World Cup History</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
             color: #333;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+
+        h2 {
             color: #0056b3;
+            margin-top: 30px;
         }
 
         p {
             font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #e6f2ff;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #004d99;
+            text-align: left;
+            font-size: 1.1em;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #c00;
+            font-size: 1.2em;
+            margin-right: 15px;
+            min-width: 80px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Website!</h1>
-        <p>This is my very first webpage.</p>
-        <p>I'm excited to learn web development!</p>
+        <h1>History of the Cricket World Cup Winners</h1>
+        <p>
+            The ICC Men's Cricket World Cup is the pinnacle of One Day International (ODI) cricket,
+            bringing together the best teams from around the globe. Held every four years, it's a
+            celebration of talent, strategy, and unforgettable moments. Since its inception in 1975,
+            the tournament has crowned several champions, each with their own unique story of victory.
+        </p>
+
+        <h2>List of Winners</h2>
+        <ul>
+            <li><span class="year">1975:</span> West Indies</li>
+            <li><span class="year">1979:</span> West Indies</li>
+            <li><span class="year">1983:</span> India</li>
+            <li><span class="year">1987:</span> Australia</li>
+            <li><span class="year">1992:</span> Pakistan</li>
+            <li><span class="year">1996:</span> Sri Lanka</li>
+            <li><span class="year">1999:</span> Australia</li>
+            <li><span class="year">2003:</span> Australia</li>
+            <li><span class="year">2007:</span> Australia</li>
+            <li><span class="year">2011:</span> India</li>
+            <li><span class="year">2015:</span> Australia</li>
+            <li><span class="year">2019:</span> England</li>
+            <li><span class="year">2023:</span> Australia</li>
+        </ul>
+        
+        <p>
+            Australia holds the record for the most titles, showcasing their dominance in the tournament's history.
+            India's memorable wins in 1983 and 2011, and West Indies' early dominance, remain iconic moments for cricket fans.
+        </p>
     </div>
 </body>
 </html>
